@@ -1,45 +1,38 @@
 .feature-section__title--hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .feature-list {
-    display: flex;
-    gap: 30px;
-
 }
 .feature-list__item {
 }
 .feature-card {
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: var(--button-color);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  margin-bottom: 30px;
+  background-color: var(--button-color);
+  border-radius: 4px;
 }
 .feature-card__icon {
 }
 .feature-card__title {
-    color: var(--primary-color);
-    margin-bottom: 10px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 .feature-card__text {
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
