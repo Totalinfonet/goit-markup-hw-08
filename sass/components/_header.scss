@@ -6,11 +6,11 @@
 .logo {
 }
 .logo__link {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
@@ -20,17 +20,43 @@
 .logo__span--dark {
   color: var(--secondary-color);
 }
+.nav-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px;
+}
+// .menu-toggle {
+//   display: inline-flex;
+//   margin: 0;
+//   padding: 0;
+//   border: 0;
+//   background-color: transparent;
+// }
+// .menu-toggle__icon-cross {
+//   display: none;
+// }
+// .menu-toggle.js-open-menu .menu-btn__icon-cross {
+//   display: block;
+// }
+// .menu-toggle.js-open-menu .menu-btn__icon-menu {
+//   display: none;
+// }
 .nav-list {
 }
 .nav-list__item {
+  margin-bottom: 32px;
 }
+
+.nav-list__item:last-child {
+  margin-bottom: 0;
+}
+
 .nav-list__link {
-  padding-top: 32px;
-  padding-bottom: 40px;
   color: var(--primary-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 40px;
+  line-height: 1.2;
   letter-spacing: 0.02em;
 
   transition: color var(--transition-duration) var(--cubic-bezier);
@@ -61,17 +87,19 @@
 }
 
 .contacts-list {
+  margin-top: 302px;
 }
 .contacts-list__item {
+  margin-top: 32px;
 }
 .contacts-list__link {
-  padding-top: 32px;
-  padding-bottom: 40px;
-  color: var(--brand-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
+  // padding-top: 32px;
+  // padding-bottom: 40px;
+  // color: var(--brand-color);
+  // font-weight: 500;
+  // font-size: 14px;
+  // line-height: 1.1;
+  // letter-spacing: 0.02em;
 
   transition: color var(--transition-duration) var(--cubic-bezier);
 
@@ -90,6 +118,43 @@
   fill: var(--brand-color);
 
   transition: fill var(--transition-duration) var(--cubic-bezier);
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
 }
-.contacts-list__text {
+.contacts-list__text-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.contacts-list__text-email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+
+.network-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 64px;
+  margin-bottom: 48px;
+
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+.network-list__link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
