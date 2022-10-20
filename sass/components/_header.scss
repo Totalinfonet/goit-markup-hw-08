@@ -6,6 +6,7 @@
 .logo {
 }
 .logo__link {
+  display: inline-flex;
   padding-top: 15px;
   padding-bottom: 15px;
   font-family: "Raleway", sans-serif;
@@ -26,23 +27,11 @@
   justify-content: space-between;
   min-height: 60px;
 }
-// .menu-toggle {
-//   display: inline-flex;
-//   margin: 0;
-//   padding: 0;
-//   border: 0;
-//   background-color: transparent;
-// }
-// .menu-toggle__icon-cross {
-//   display: none;
-// }
-// .menu-toggle.js-open-menu .menu-btn__icon-cross {
-//   display: block;
-// }
-// .menu-toggle.js-open-menu .menu-btn__icon-menu {
-//   display: none;
-// }
 .nav-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .nav-list__item {
   margin-bottom: 32px;
@@ -53,9 +42,11 @@
 }
 
 .nav-list__link {
+  padding-top: 20px;
+  padding-bottom: 33px;
   color: var(--primary-color);
   font-weight: 500;
-  font-size: 40px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
 
@@ -80,26 +71,34 @@
     background-color: var(--accent-color);
     border-radius: 2px;
 
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
+    // @media screen and (max-width: 768px) {
+    //   display: none;
+    // }
   }
 }
+// .contacts-list.menu {
+//   @media screen and (min-width: 768px) and (max-width: 1200px) {
+//     display: block;
+//   }
+// }
 
 .contacts-list {
-  margin-top: 302px;
+  display: flex;
+  gap: 30px;
 }
 .contacts-list__item {
   margin-top: 32px;
 }
 .contacts-list__link {
-  // padding-top: 32px;
-  // padding-bottom: 40px;
-  // color: var(--brand-color);
-  // font-weight: 500;
-  // font-size: 14px;
-  // line-height: 1.1;
-  // letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 33px;
+  color: var(--brand-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 
   transition: color var(--transition-duration) var(--cubic-bezier);
 
@@ -119,9 +118,9 @@
 
   transition: fill var(--transition-duration) var(--cubic-bezier);
 
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
+  // @media screen and (max-width: 480px) {
+  //   display: none;
+  // }
 }
 .contacts-list__text-tel {
   font-weight: 500;
@@ -145,9 +144,9 @@
   margin-top: 64px;
   margin-bottom: 48px;
 
-  @media screen and (min-width: 480px) {
-    display: none;
-  }
+  // @media screen and (min-width: 480px) {
+  //   display: none;
+  // }
 }
 .network-list__link {
   padding-top: 20px;
