@@ -200,23 +200,6 @@ img {
   color: var(--brand-color);
 }
 
-.network-list {
-  display: flex;
-  gap: 10px;
-  margin-top: 64px;
-  margin-bottom: 48px;
-}
-
-.network-list__link {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-
 .hero-section {
   min-width: 480px;
   min-height: 400px;
@@ -1034,7 +1017,7 @@ img {
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: var(--white-color);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -1048,7 +1031,6 @@ img {
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
 }
 
 .mobile-menu {
@@ -1060,7 +1042,6 @@ img {
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
   text-decoration: none;
 }
 
@@ -1068,4 +1049,67 @@ img {
 .menu-toggle:active .menu-toggle__icon,
 .menu-toggle:focus .menu-toggle__icon {
   fill: var(--accent-color);
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  margin-bottom: 302px;
+}
+
+.mobile-nav__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+.mobile-nav__link:hover, .mobile-nav__link:focus, .mobile-nav__link:active {
+  color: var(--accent-color);
+}
+
+.mobile-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+
+.mobile-contacts__tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+
+.mobile-contacts__email {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--brand-color);
+}
+
+.network-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 64px;
+  margin-bottom: 48px;
+}
+
+.network-list__link {
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  border-right: 1px solid var(--backdrop-color);
+}
+
+.network-list__link--last {
+  border-right: none;
 }/*# sourceMappingURL=main.css.map */
