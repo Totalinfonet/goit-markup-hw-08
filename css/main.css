@@ -645,9 +645,11 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+  padding: 95px 15px;
   background-color: var(--backdrop-color);
   opacity: 1;
   transition: opacity var(--transition-duration) var(--cubic-bezier);
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -661,13 +663,7 @@ img {
 }
 
 .modal {
-  position: absolute;
-  overflow: visible;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  position: relative;
   padding: 40px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -675,11 +671,23 @@ img {
   opacity: 1;
   transition: transform var(--transition-duration) var(--cubic-bezier), opacity var(--transition-duration) var(--cubic-bezier);
 }
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    overflow: visible;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    max-width: 450px;
+    width: 100%;
+  }
+}
 
 .modal__close-button {
   position: absolute;
   top: 8px;
   right: 8px;
+  margin-left: auto;
   display: flex;
   align-items: center;
   width: 30px;
@@ -704,7 +712,7 @@ img {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.1;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-color);
@@ -800,15 +808,11 @@ img {
 
 .checkbox__label {
   position: relative;
-  display: flex;
-  justify-content: center;
-  text-align: center;
   margin-top: 20px;
-  padding: 0 10px;
   cursor: pointer;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.2;
   letter-spacing: 0.03em;
 }
 
@@ -828,7 +832,7 @@ img {
 
 .checkbox__text {
   display: inline-block;
-  padding-left: 16px;
+  padding-left: 24px;
 }
 
 .checkbox__link {
@@ -839,7 +843,7 @@ img {
 .checkbox__icon {
   position: absolute;
   top: 50%;
-  left: 16px;
+  left: 0;
   transform: translateY(-50%);
   display: inline-block;
   width: 16px;
