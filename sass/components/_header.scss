@@ -1,7 +1,11 @@
 .header {
   border-bottom: 1px solid var(--header-line);
 }
-.nav {
+.nav.menu {
+  @media screen and (min-width: 1200px) {
+    margin-left: 92px;
+    margin-right: auto;
+  }
 }
 .logo {
 }
@@ -14,6 +18,9 @@
   font-size: 24px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+  }
 }
 .logo__span--main {
   color: var(--accent-color);
@@ -34,7 +41,7 @@
   margin-right: auto;
 }
 .nav-list__item {
-  margin-bottom: 32px;
+  // margin-bottom: 32px;
 }
 
 .nav-list__item:last-child {
@@ -56,6 +63,10 @@
   &:focus {
     color: var(--accent-color);
   }
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 .nav-list__link--current {
   position: relative;
@@ -65,7 +76,7 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: -26px;
     width: 100%;
     height: 4px;
     background-color: var(--accent-color);
@@ -82,12 +93,20 @@
 //   }
 // }
 
-.contacts-list {
-  display: flex;
-  gap: 30px;
+.contacts-list.menu {
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 .contacts-list__item {
   margin-top: 32px;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
 }
 .contacts-list__link {
   display: flex;
@@ -110,6 +129,14 @@
   &:hover .contacts-list__icon,
   &:focus .contacts-list__icon {
     fill: var(--accent-color);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 .contacts-list__icon {

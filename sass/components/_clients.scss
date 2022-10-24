@@ -9,6 +9,11 @@
   font-size: 28px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    margin-top: 94px;
+    font-size: 36px;
+  }
 }
 .clients-list {
   display: flex;
