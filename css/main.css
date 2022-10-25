@@ -272,6 +272,8 @@ img {
   .hero-section {
     background-image: linear-gradient(to left, var(--hero-gradient), var(--hero-gradient)), url("../images/9img.jpg");
     margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
