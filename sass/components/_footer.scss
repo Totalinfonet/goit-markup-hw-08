@@ -27,6 +27,9 @@
 }
 .footer-main {
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .logo {
 }
@@ -80,6 +83,9 @@
   text-align: center;
   @media screen and (min-width: 768px) {
     margin: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
   }
 }
 .footer-socials__title {
@@ -171,7 +177,7 @@
   letter-spacing: 0.03em;
   color: var(--white-opacity);
   @media screen and (min-width: 768px) {
-    width: 50%;
+    max-width: 450px;
   }
   @media screen and (min-width: 1200px) {
     width: 358px;

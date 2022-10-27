@@ -71,6 +71,17 @@ img {
   }
 }
 
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .header {
   border-bottom: 1px solid var(--header-line);
 }
@@ -243,7 +254,6 @@ img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 60px;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
@@ -271,7 +281,6 @@ img {
 @media screen and (min-width: 1200px) {
   .hero-section {
     background-image: linear-gradient(to left, var(--hero-gradient), var(--hero-gradient)), url("../images/9img.jpg");
-    margin-bottom: 94px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -340,15 +349,6 @@ img {
   }
 }
 
-.feature-list:last-child {
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .feature-list:last-child {
-    margin-bottom: 94px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .feature-list__item {
     width: calc((100% - 60px) / 2);
@@ -383,6 +383,11 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+@media screen and (min-width: 768px) {
+  .feature-card__title {
+    text-align: left;
+  }
+}
 
 .feature-card__text {
   font-size: 14px;
@@ -396,11 +401,6 @@ img {
 @media screen and (max-width: 1199px) {
   .occupation-section {
     display: none;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .occupation-section {
-    margin-bottom: 94px;
   }
 }
 
@@ -558,7 +558,6 @@ img {
 .clients-section__title {
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 60px;
   color: var(--primary-color);
   font-weight: 700;
   font-size: 28px;
@@ -568,7 +567,6 @@ img {
 @media screen and (min-width: 1200px) {
   .clients-section__title {
     margin-bottom: 50px;
-    margin-top: 94px;
     font-size: 36px;
   }
 }
@@ -577,12 +575,6 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  margin-bottom: 60px;
-}
-@media screen and (min-width: 1200px) {
-  .clients-list {
-    margin-bottom: 94px;
-  }
 }
 
 .clients-list__item {
@@ -661,6 +653,11 @@ img {
 .footer-main {
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-main {
+    text-align: left;
+  }
+}
 
 .logo__link--footer {
   padding-top: 0;
@@ -708,6 +705,11 @@ img {
 @media screen and (min-width: 768px) {
   .footer-socials {
     margin: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-socials {
+    text-align: left;
   }
 }
 
@@ -809,7 +811,7 @@ img {
 }
 @media screen and (min-width: 768px) {
   .footer-form__input {
-    width: 50%;
+    max-width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
